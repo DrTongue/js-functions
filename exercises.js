@@ -45,7 +45,7 @@ var bango2 = 3;
  * Console.log `sum` to test your code.
 */
 
-/*function add(num1, num2){
+function add(num1, num2){
 	return num1 + num2;
 }
 var sum = add(bango1, bango2);
@@ -66,7 +66,7 @@ console.log(sum);
  * Console.log `difference` to test your code.
 */ 
 
-/*function subtract(num1, num2){
+function subtract(num1, num2){
 	return num1 - num2;
 }
 	var difference = subtract(bango1, bango2);
@@ -93,7 +93,7 @@ console.log(difference2);
  * Console.log `product` to test your code.
 */
 
-/*function multiply(num1, num2){
+function multiply(num1, num2){
 	return num1 * num2;
 }
 var product = multiply(bango1, bango2);
@@ -115,7 +115,7 @@ console.log(product);
  * Console.log `quotient` to test your code.
 */
 
-/*function divide(num2, num1){
+function divide(num2, num1){
 return num2 / num1;
 }
 var quotient = divide(bango2, bango1);
@@ -141,12 +141,13 @@ console.log(quotient2);
  * Console.log your result.
 */
 
-/*function checkSum(x){
-	return "Mariah Carey has been married " + x + " amount of times.";
-	var x = 5;
-}
 
-console.log(checkSum(sum));
+
+function checkSum(){
+	var x = 5;
+	return "Mariah Carey has been married " + x + " amount of times.";
+}
+console.log(checkSum(checkSum));
 /*
  * #7
  * Function - checkDifference
@@ -159,9 +160,9 @@ console.log(checkSum(sum));
  * Console.log your results.
 */ 
 
-/*function checkDifference(x){
-	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+function checkDifference(x){
 	var x = 8;
+	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
 console.log(checkDifference(difference));
 
@@ -180,7 +181,7 @@ console.log(checkDifference(difference));
 var a = 9;
 var b = 3;
 
-/*function checkProduct(){
+function checkProduct(){
 	return a * b;
 }
 console.log(checkProduct(product));
@@ -197,7 +198,7 @@ console.log(checkProduct(product));
  * Console.log your result.  
 */
 
-/*function checkQuotient(){
+function checkQuotient(){
 	return a / b;
 }
 console.log(checkQuotient(product, quotient));
