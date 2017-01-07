@@ -143,11 +143,14 @@ console.log(quotient2);
 
 
 
-function checkSum(){
-	var x = 5;
+function checkSum(X){
 	return "Mariah Carey has been married " + x + " amount of times.";
 }
-console.log(checkSum(checkSum));
+
+var mariah = 5;
+
+console.log(mariah);
+
 /*
  * #7
  * Function - checkDifference
@@ -161,9 +164,9 @@ console.log(checkSum(checkSum));
 */ 
 
 function checkDifference(x){
-	var x = 8;
 	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
+var tacoResults = checkDifference(difference);
 console.log(checkDifference(difference));
 
 
@@ -223,18 +226,32 @@ console.log(checkQuotient(product, quotient));
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-/*
-var bango3 = 4;
-var bango4 = 6;
-var bango5 = 10;
+
+var bango3 = 15;
+var bango4 = 100;
+var bango5 = 1;
 
 function addThenSubtract(num1, num2, num3){
-	var first = add(bango3, bango4);
-	var second = difference(first, bango5);
-	return second;
+	return num1 + num2 - num3;
 }
-console.log(addThenSubtract(first, second));
+console.log(addThenSubtract(bango3, bango4, bango5));
 
+
+//Alternative utilizing previous functions
+//DRY -- Don't Repeat Yourself
+
+function addThenSubtract(num1, num2, num3){
+	var sum = add(num1, num2);
+	return subtract(sum, num3);
+}
+console.log(addThenSubtract(bango3, bango4, bango5));
+
+
+
+function addThenSubtract(num1, num2, num3){
+	return subtract(add(num1 - num2), num3);
+}
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 /*
  * #11
@@ -307,6 +324,13 @@ console.log(addThenSubtract(first, second));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+ var res = "hi how are you?";	//Note that this is a global var; local errors out.
+
+ function allCaps(str){
+ 	return str.toUpperCase();
+
+ }
+console.log(allCaps(res));
 
 
 /*
@@ -317,7 +341,16 @@ console.log(addThenSubtract(first, second));
  * Console.log your result.
 */
 
+var line = "What's a girl like you doing in a place like this?";
 
+function oneCap(str){
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+console.log(oneCap(line));
+
+/*'string'.capitalizeFirstLetter()
+str.charAt(0).toUpperCase + string.slice(1)
 
 /*
  * #17
